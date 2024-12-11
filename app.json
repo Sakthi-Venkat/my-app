@@ -11,12 +11,10 @@
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff",
-    "scripts": {
-          "start": "expo start",
-          "web": "expo start --web"
-        }
-      
-      
+      "scripts": {
+        "start": "expo start",
+        "web": "expo start --web"
+      }
     },
     "ios": {
       "supportsTablet": true,
@@ -25,14 +23,22 @@
       }
     },
     "android": {
-      "permissions": ["ACCESS_FINE_LOCATION"],
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sakthi_venkat.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "da655e87-6abc-4e2e-9c38-6dc9e784aea3"
+      }
     }
   }
 }
